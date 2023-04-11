@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table id="myTable">
+  {% for pizza in pizzas %}
+  <tr>
+    <td>{{pizza.name}}</td>
+    <td>{{pizza.price}}</td>
+    <td>{{pizza.size}}</td>
+    <td>{{pizza.toppings}}</td>
+    <td><button onclick="getTableRowData({{pizza.id_ - 1}})">add to cart</button></td>
+  </tr>
+  {% endfor %}
+</table>
+
+<form method="post" action="/checkout">
+  <button>checkout</button>
+</form>
+
+{% endblock %}

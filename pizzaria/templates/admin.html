@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+<h1>Admin</h1>
+
+<div class="table_and_forms">
+<table class="adminTable" id="myTable">
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Size</th>
+      <th>Toppings</th>
+    </tr>
+    {% for pizza in pizzas %}
+    <tr>
+      <td>{{ pizza.name }}</td>
+      <td>${{ pizza.price }}</td>
+      <td>{{ pizza.size }}</td>
+      <td>{{ pizza.toppings }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+    <h2>Add Pizza</h2>
+    <form method="post" action="/add_pizza">
+        <label for="name">Pizza name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="price">price:</label>
+        <input type="text" id="price" name="price" required>
+        <label for="size">size:</label>
+        <input type="text" id="size" name="size" required>
+        <label for="toppings">toppings:</label>
+        <input type="text" id="toppings" name="toppings" required>
+        <input type="submit" value="Add Pizza">
+    </form>
+    <h2>Delete Pizza</h2>
+    <form method="post" action="/delete_pizza">
+        <label for="id">Pizza ID:</label>
+        <input type="text" id="id" name="id" required>
+        <input type="submit" value="Delete Pizza">
+    </form>
+</div>
+{% endblock %}

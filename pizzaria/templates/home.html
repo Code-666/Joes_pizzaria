@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<article>
+  <h2>Welcome to Joe's Pizzaria!</h2>
+  <p>See our <a href="{{ url_for('menu') }}">menu</a></p>
+</article>
+
+<table class="test">
+  <tr>
+    <td>Name</td>
+    <td>$Price</td>
+    <td>Size</td>
+    <td>Toppings</td>
+    <td><input type="number" min="0"></td>
+    <td><input type="button" onclick="getTableRowData(0)" value="add to cart"></td>
+  </tr>
+</table>
+{% endblock %}

@@ -1,0 +1,164 @@
+/* custom header */
+header {
+    background-color: #F1A94E;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+/* custom header */
+
+/* custom navbar */
+      nav {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+/* custom navbar */
+
+/* custom menu style */
+  table {
+    display: inline-block;
+    vertical-align: top;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .adminTable {
+    width: 33.33333333333333%;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #F1A94E;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  td {
+    font-size: 16px;
+    color: #333;
+  }
+
+  tr:nth-child(even) {
+    background-color: #FCD7A1;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #FDE7BF;
+  }
+
+  tr:hover {
+    background-color: #F2C94C;
+  }
+
+/* custom menu style */
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8e7e2;
+      padding: 20px;
+    }
+    h1 {
+
+      text-align: center;
+    }
+    form {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 300px;
+      margin: 0;
+      background-color: #ffe7d9;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    }
+    label, input, textarea {
+      display: block;
+      margin-bottom: 10px;
+
+    }
+    input[type="submit"] {
+      background-color: #e85a4f;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .table_and_forms {
+        margin: auto;
+    }
+
+    .my-div {
+    background-color: #FCD7A1;
+    border: 1px solid black;
+    padding: 10px;
+    }
+
+article {
+  background-color: #F8F8F8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+article a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
